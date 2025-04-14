@@ -1,0 +1,37 @@
+.features {
+    margin-bottom:50px;
+}
+.features h2{
+  margin-top:20px;
+}
+
+.featurecard{
+  position: relative;
+  background: var(--cardbackground);
+  background-clip: padding-box;
+  border-radius:20px;
+  text-align:center;
+  padding:20px 10px;
+  min-height:210px;
+  border:1px solid var(--cardbackground);
+  transition: transform .2s;
+}
+.featurecard:hover{
+  transform: scale(1.05);
+}
+
+.featurecard img{
+    width:70px;
+    height:70px;
+    margin:20px auto 10px;
+}
+.featurecard span{
+  font-size:16px;
+  font-weight:600;
+  width:100%;
+  display:inline-block;
+  color:var(--color-secondary);
+  z-index:99;
+}
+
+

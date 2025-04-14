@@ -1,0 +1,47 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 1rem;
+}
+
+.card {
+  background-color: var(--ifm-card-background-color);
+  border-radius: 12px;
+  padding: 1rem;
+  width: 160px;
+  text-align: center;
+  box-shadow: var(--ifm-global-shadow-lw);
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: var(--ifm-hover-overlay); /* auto adjusts in dark/light */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);   /* subtle depth */
+}
+
+.logo {
+  /* width: 48px; */
+  height:48px;
+  margin-bottom: 0.5rem;
+}
+
+.exchangeName {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.3rem 0;
+  color: var(--ifm-font-color-base);
+}
+
+a {
+  color: var(--ifm-link-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}

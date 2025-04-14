@@ -1,0 +1,35 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto 20px;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  padding: 25px 5px 0px;
+  background-color: var(--ifm-card-background-color);
+  box-shadow: var(--ifm-global-shadow-lw);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cardHover {
+  box-shadow: var(--ifm-global-shadow-md);
+  transform: translateY(-4px);
+  background-color: var(--ifm-hover-overlay);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card a {
+  color: var(--ifm-link-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}

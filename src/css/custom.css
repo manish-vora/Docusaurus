@@ -1,0 +1,208 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #f2592a;
+  --ifm-color-primary-dark: #f2592a;
+  --ifm-color-primary-darker: #f2592a;
+  --ifm-color-primary-darkest: #f2592a;
+  --ifm-color-primary-light: #f2592a;
+  --ifm-color-primary-lighter: #f2592a;
+  --ifm-color-primary-lightest: #f2592a;
+  --ifm-code-font-size: 95%;
+  --docusaurus-high:lighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --backgroundbg:linear-gradient(112deg, rgba(242, 89, 42, 0.3) 0%, rgba(40, 77, 255, 0.3) 100%), rgb(255, 255, 255);
+  --cardbackground:rgba(255, 255, 255, 0.36);
+  --color-secondary:#000000;
+
+  --ifm-font-size-base: 16px;
+  --ifm-h1-font-size: 2.0rem;
+  --ifm-h2-font-size: 1.75rem;
+  --ifm-h3-font-size: 1.5rem;
+  --ifm-h4-font-size: 1.25rem;
+  --ifm-h5-font-size: 1rem;
+  --ifm-h6-font-size: 0.75rem;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #f2592a;
+  --ifm-color-primary-dark: #f2592a;
+  --ifm-color-primary-darker: #f2592a;
+  --ifm-color-primary-darkest: #f2592a;
+  --ifm-color-primary-light: #f2592a;
+  --ifm-color-primary-lighter: #f2592a;
+  --ifm-color-primary-lightest: #f2592a;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --backgroundbg:linear-gradient(112deg, rgba(242, 89, 42, 0.19) 0%, rgba(0, 0, 0, 0.17) 48%, rgba(40, 77, 255, 0.19) 100%),#000;
+  --cardbackground:rgba(255, 255, 255, 0.06);
+  --color-secondary:#FFFFFF;
+}
+
+/* src/css/custom.css */
+html, body {
+  font-family: 'Inter', sans-serif !important;
+  background: var(--backgroundbg);
+}
+#__docusaurus{
+  background: var(--backgroundbg);
+}
+
+h1, h2, h3, h4, h5, h6,
+.navbar__title,
+.menu__link,
+p, span, div, a {
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* Light Theme Footer (default) */
+.footer {
+  /* --ifm-footer-background-color: #F5F5F7;  */
+  --ifm-footer-color: #000000;
+  background: transparent;
+  border-top: 1px solid rgba(255,255,255, 0.36);
+}
+
+/* Dark Theme Footer */
+[data-theme='dark'] .footer {
+  /* --ifm-footer-background-color: #212529;  */
+  --ifm-footer-color: #ffffff;            /* Light text */
+  border-top: 1px solid rgba(255,255,255, 0.06);
+}
+
+.headerbod{
+  border-bottom: 1px solid rgba(255,255,255, 0.36);
+  padding:10px 0;
+  margin-bottom:30px;
+}
+[data-theme='dark'] .headerbod {
+  border-bottom: 1px solid rgba(255,255,255, 0.06);
+}
+
+.navbar, [data-theme='dark'] .navbar{
+  background:transparent;
+  box-shadow:none;
+  padding:0;
+}
+.navbar__logo{
+  height:auto;
+}
+/* Apply the dynamic colors */
+
+.footer a {
+  color: var(--ifm-footer-color);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer span {
+  color: var(--ifm-footer-color);
+}
+
+/* Optional: image brightness tweak for dark mode */
+[data-theme='dark'] .footer img {
+  filter: brightness(0.95);
+}
+
+.footer-icon-dark {
+  display: none;
+}
+
+[data-theme='dark'] .footer-icon-light {
+  display: none;
+}
+
+[data-theme='dark'] .footer-icon-dark {
+  display: inline;
+}
+
+
+.features {
+  padding: 2rem 0;
+}
+
+.featureCard {
+  background: var(--ifm-background-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: none;
+  transition: transform 0.2s ease-in-out, border-color 0.2s;
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Makes the card square */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.featureCard:hover {
+  transform: scale(1.03);
+  border-color: var(--ifm-color-primary);
+}
+
+.featureIcon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.learnMore {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.learnMore:hover {
+  text-decoration: underline;
+}
+
+
+
+.breadcrumbs .breadcrumbs__link{
+  padding:0;
+  background:transparent;
+}
+.subtitle{
+  font-size:22px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+.markdown > h2, .markdown > h3, strong, b{
+  color: var(--ifm-color-primary);
+}
+.anchor ~ p strong{
+    color: var(--color-secondary);
+}
+.table-of-contents li a{
+  font-size:16px;
+}
+
+.theme-doc-sidebar-container{
+  margin-top:-30px !important;
+  border-right:none !important;
+}
+
+.theme-doc-sidebar-container > div > div{
+  margin-top:-30px;
+  background:var(--cardbackground);
+}
+
+.theme-doc-sidebar-container ~ main{
+  padding-left:20px;
+}
+
+.theme-doc-sidebar-menu li a{
+    line-height: 1.50;
+}
